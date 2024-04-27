@@ -12,18 +12,22 @@ public class Donation : MonoBehaviour
     [SerializeField][Range(0, 1)] private float donationChance;
     [SerializeField] private float donationDuration;
     [SerializeField] List<MessageSO> messageSOs = new List<MessageSO>();
+    [SerializeField] FMODUnity.EventReference donationsfx;
+    public bool hasDono;
     public bool donoActive {get { return !animator.GetCurrentAnimatorStateInfo(0).IsName("DonationInactive"); }}
     float donationCooldown;
 
     private void Start()
     {
         donationCooldown = donationInterval;
+        hasDono = false;
     }
 
     private void Update()
     {
         if (donoActive)
         {
+            hasDono = false;
             return;
         }
 
@@ -35,6 +39,11 @@ public class Donation : MonoBehaviour
             {
                 MessageSO randomMessage = messageSOs[Random.Range(0, messageSOs.Count)];
                 ActivateDono(randomMessage);
+                if (!hasDono)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot(donationsfx);
+                    hasDono = true;
+                }    
             }
         }
     }
