@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
@@ -9,6 +10,7 @@ public class ContentManager : MonoBehaviour
     [SerializeField] Image contentImage;
     [SerializeField] VideoPlayer videoPlayer;
     [SerializeField] private float emoteCooldown;
+    [SerializeField] Donation donationScript;
     [SerializeField] List<ContentSO> contentList = new List<ContentSO>();
     float currentCooldown = 0;
 
@@ -34,6 +36,17 @@ public class ContentManager : MonoBehaviour
 
     private void Update()
     {
+        if (donationScript.donoActive)
+        {
+            currentCooldown = emoteCooldown;
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Happy();
+            }
+            return;
+        }
+
+
         currentCooldown -= Time.deltaTime;
         if(currentCooldown > emoteCooldown)
         {
@@ -92,7 +105,15 @@ public class ContentManager : MonoBehaviour
 
     public void Happy()
     {
-        ChooseEmote(EmoteEnum.Happy);
+        if(donationScript.donoActive)
+        {
+            pointManager.PM_Instance.GainPoint(1);
+        }
+        else
+        {
+            ChooseEmote(EmoteEnum.Happy);
+        }
+        
     }
 
     public void Sad()
