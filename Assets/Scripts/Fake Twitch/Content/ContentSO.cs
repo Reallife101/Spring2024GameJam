@@ -23,6 +23,11 @@ public abstract class ContentSO : ScriptableObject
 
     public float GetScore(EmoteEnum emote)
     {
+        //If doesnt exist, do nothing
+        if (!emoteMap.ContainsKey(emote))
+        {
+            return 0;
+        }
         return emoteMap[emote];
     }
 
