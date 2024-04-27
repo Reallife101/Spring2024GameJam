@@ -674,7 +674,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -2404,6 +2404,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9298df57398b70449a57bd58f7ac489f, type: 2}
   - {fileID: 11400000, guid: 4d1925e2cfc313342b46e8b31bbb19e0, type: 2}
   - {fileID: 11400000, guid: 52d248c46f7651d4d9e63988a94aaa74, type: 2}
+  - {fileID: 11400000, guid: 427aa08864bf1844893cdb624d4a527b, type: 2}
 --- !u!1001 &1241011734
 PrefabInstance:
   m_ObjectHideFlags: 0

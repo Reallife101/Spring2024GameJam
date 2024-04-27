@@ -50,7 +50,7 @@ public class ContentManager : MonoBehaviour
     public void chooseNewContent()
     {
         //Get a random one and ask it to call either play video or display image
-        currentContent = contentList[Random.Range(0, contentList.Count - 1)];
+        currentContent = contentList[Random.Range(0, contentList.Count)];
         currentContent.GetContent();
     }
 

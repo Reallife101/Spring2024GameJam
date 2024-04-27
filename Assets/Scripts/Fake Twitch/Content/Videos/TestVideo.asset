@@ -19,4 +19,4 @@ MonoBehaviour:
     - 0
     - 0
     - 0
-  clip: {fileID: 0}
+  clip: {fileID: 32900000, guid: 7549f1854e76a6a41a1195d313ebaded, type: 3}
