@@ -3,6 +3,7 @@ using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
 
+#if UNITY_EDITOR
 public class CSVtoMessageSOTool : EditorWindow
 {
     [MenuItem("Tools/CSV to ScriptableObject Converter")]
@@ -61,3 +62,5 @@ public class CSVtoMessageSOTool : EditorWindow
         Debug.Log("CSV file converted to ScriptableObjects successfully!");
     }
 }
+
+#endif

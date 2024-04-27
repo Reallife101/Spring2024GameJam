@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 public class ImageSOCreatorTool : EditorWindow
 {
     private List<string> imageFilePaths = new List<string>();
@@ -141,3 +142,4 @@ public class ImageSOCreatorTool : EditorWindow
     }
 
 }
+#endif

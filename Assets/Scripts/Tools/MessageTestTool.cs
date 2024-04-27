@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 
 [CustomEditor(typeof(message))]
 public class MessageTestTool : Editor
@@ -23,3 +24,4 @@ public class MessageTestTool : Editor
         }
     }
 }
+#endif

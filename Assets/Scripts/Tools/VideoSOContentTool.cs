@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.Video;
 
+#if UNITY_EDITOR
 public class VideoSOContentTool : EditorWindow
 {
     private List<string> videoFilePaths = new List<string>();
@@ -112,3 +113,4 @@ public class VideoSOContentTool : EditorWindow
         videoFilePaths.Clear(); ;
     }
 }
+#endif

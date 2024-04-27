@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(ContentManager))]
 public class ContentManagerTool : Editor
 {
@@ -18,3 +19,4 @@ public class ContentManagerTool : Editor
 
     }
 }
+#endif

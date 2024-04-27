@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 
 [CustomEditor(typeof(FakeChatManager))]
 public class TwitchChatTestTool : Editor
@@ -67,3 +68,4 @@ public class TwitchChatTestTool : Editor
         Repaint();
     }
 }
+#endif
