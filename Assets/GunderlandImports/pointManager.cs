@@ -9,6 +9,8 @@ public class pointManager : MonoBehaviour
     public int totalPoints;
     public int numIncorrect;
     public float param;
+    [SerializeField] FMODUnity.EventReference correctsfx;
+    [SerializeField] FMODUnity.EventReference incorrectsfx; 
     [SerializeField] TMP_Text score;
 
     private void Awake()
@@ -29,12 +31,14 @@ public class pointManager : MonoBehaviour
 
     public void GainPoint(int points)
     {
-        if (points <= 0 && numIncorrect < 3)
+        if (points <= 0)
         {
             ++numIncorrect;
+            FMODUnity.RuntimeManager.PlayOneShot(incorrectsfx);
         } else if (points > 0)
         {
             numIncorrect = 0;
+            FMODUnity.RuntimeManager.PlayOneShot(correctsfx);
         }
         param = (float)(numIncorrect/3.0);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("playersucks", param);
