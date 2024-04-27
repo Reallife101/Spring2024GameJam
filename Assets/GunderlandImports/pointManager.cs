@@ -8,6 +8,7 @@ public class pointManager : MonoBehaviour
     public static pointManager PM_Instance;
     public int totalPoints;
     public int numIncorrect;
+    public float param;
     [SerializeField] TMP_Text score;
 
     private void Awake()
@@ -23,25 +24,20 @@ public class pointManager : MonoBehaviour
     {
         totalPoints = 0;
         numIncorrect = 0;
+        param = 0;
     }
 
     public void GainPoint(int points)
     {
-        if (points <= 0)
+        if (points <= 0 && numIncorrect < 3)
         {
             ++numIncorrect;
         } else if (points > 0)
         {
             numIncorrect = 0;
         }
-
-        if (numIncorrect >= 3)
-        {
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("playersucks", 1);
-        } else 
-        {
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("playersucks", 0);
-        }
+        param = (float)(numIncorrect/3.0);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("playersucks", param);
             
         
         int pointsGained = (int)(points * comboManager.CM_Instance.currentMultiplier);
