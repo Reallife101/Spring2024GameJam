@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ImageSO", menuName = "ContentSO/Image")]
 public class ImageContentSO : ContentSO
 {
-    [SerializeField] Sprite image;
+    public Sprite image;
 
     public override void GetContent()
     {

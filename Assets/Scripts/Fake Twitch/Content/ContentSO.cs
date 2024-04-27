@@ -19,7 +19,7 @@ public class EmoteScoreDict : SerializableDictionary<EmoteEnum, float> {}
 
 public abstract class ContentSO : ScriptableObject
 {
-    [SerializeField] private EmoteScoreDict emoteMap;
+    public EmoteScoreDict emoteMap;
 
     public float GetScore(EmoteEnum emote)
     {

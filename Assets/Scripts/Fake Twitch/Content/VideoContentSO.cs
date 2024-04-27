@@ -6,7 +6,7 @@ using UnityEngine.Video;
 [CreateAssetMenu(fileName = "VideoSO", menuName = "ContentSO/Video")]
 public class VideoContentSO : ContentSO
 {
-    [SerializeField] VideoClip clip;
+    public VideoClip clip;
 
     public override void GetContent()
     {
