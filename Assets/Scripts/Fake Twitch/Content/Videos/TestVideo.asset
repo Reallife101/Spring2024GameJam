@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: TestVideo
   m_EditorClassIdentifier: 
   emoteMap:
-    m_keys: 
-    m_values: []
+    m_keys: 00000000010000000200000003000000
+    m_values:
+    - 0
+    - 0
+    - 0
+    - 0
   clip: {fileID: 0}
