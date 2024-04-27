@@ -5543,10 +5543,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1259412997}
     m_Modifications:
-    - target: {fileID: 2476545265069253662, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ea271613cd1184e4aa4f62ab36295973, type: 3}
     - target: {fileID: 3618291856956642173, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
       propertyPath: m_Name
       value: Happy Button
