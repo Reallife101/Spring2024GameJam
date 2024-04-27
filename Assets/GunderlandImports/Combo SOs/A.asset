@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040dbdbd3f094348b7745aa51c2325e, type: 3}
+  m_Name: A
+  m_EditorClassIdentifier: 
+  letterGradeSprite: {fileID: 0}
+  letterGradeText: Adderall
+  comboMeterColor: {r: 1, g: 0.5145066, b: 0, a: 1}
+  pointsRequiredToNext: 3000
+  pointMultiplier: 1.75
+  nextTier: {fileID: 11400000, guid: 1515e25f485147e49bf6fe263da55cc4, type: 2}
+  prevTier: {fileID: 11400000, guid: 797011d2a728fac4ab37251b0b130d94, type: 2}
+  cameraZoomAmount: 10.5
+  bloomIntensity: 3.5
+  chromaticAbberationIntensity: 0.4
+  vignetteIntensity: 0.45
+  comboSound:
+    Guid:
+      Data1: 319573476
+      Data2: 1166249196
+      Data3: 1529335475
+      Data4: 1199943369
+    Path: event:/[UI] A
+  dastardlyComboSound:
+    Guid:
+      Data1: -503366399
+      Data2: 1304697019
+      Data3: -166692477
+      Data4: -470205793
+    Path: event:/[UI] E

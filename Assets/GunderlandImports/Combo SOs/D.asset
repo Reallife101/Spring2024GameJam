@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040dbdbd3f094348b7745aa51c2325e, type: 3}
+  m_Name: D
+  m_EditorClassIdentifier: 
+  letterGradeSprite: {fileID: 0}
+  letterGradeText: Dastardly
+  comboMeterColor: {r: 1, g: 1, b: 1, a: 1}
+  pointsRequiredToNext: 625
+  pointMultiplier: 1
+  nextTier: {fileID: 11400000, guid: 776305086b3c47f4cb4fbdd4705bb80f, type: 2}
+  prevTier: {fileID: 0}
+  cameraZoomAmount: 10
+  bloomIntensity: 0
+  chromaticAbberationIntensity: 0
+  vignetteIntensity: 0
+  comboSound:
+    Guid:
+      Data1: -503366399
+      Data2: 1304697019
+      Data3: -166692477
+      Data4: -470205793
+    Path: event:/[UI] E
+  dastardlyComboSound:
+    Guid:
+      Data1: -503366399
+      Data2: 1304697019
+      Data3: -166692477
+      Data4: -470205793
+    Path: event:/[UI] E

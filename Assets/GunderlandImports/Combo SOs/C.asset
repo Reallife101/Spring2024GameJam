@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040dbdbd3f094348b7745aa51c2325e, type: 3}
+  m_Name: C
+  m_EditorClassIdentifier: 
+  letterGradeSprite: {fileID: 0}
+  letterGradeText: Chaotic
+  comboMeterColor: {r: 0.1121045, g: 0.7075472, b: 0.044499747, a: 1}
+  pointsRequiredToNext: 1250
+  pointMultiplier: 1.25
+  nextTier: {fileID: 11400000, guid: 797011d2a728fac4ab37251b0b130d94, type: 2}
+  prevTier: {fileID: 11400000, guid: b3159b3ef9fa31b498cf043121676efd, type: 2}
+  cameraZoomAmount: 9
+  bloomIntensity: 1
+  chromaticAbberationIntensity: 0.1
+  vignetteIntensity: 0.15
+  comboSound:
+    Guid:
+      Data1: -991632799
+      Data2: 1255019076
+      Data3: -1440633690
+      Data4: -1589229388
+    Path: event:/[UI] F
+  dastardlyComboSound:
+    Guid:
+      Data1: -503366399
+      Data2: 1304697019
+      Data3: -166692477
+      Data4: -470205793
+    Path: event:/[UI] E
