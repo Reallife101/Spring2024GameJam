@@ -12,6 +12,7 @@ public class ContentManager : MonoBehaviour
     [SerializeField] private float emoteCooldown;
     [SerializeField] Donation donationScript;
     [SerializeField] List<ContentSO> contentList = new List<ContentSO>();
+    [SerializeField] ReactiveChatManager rcm;
     float currentCooldown = 0;
 
     public static ContentManager Instance { get; private set; }
@@ -99,6 +100,14 @@ public class ContentManager : MonoBehaviour
     {
         int score = currentContent.GetScore(emoteType);
         pointManager.PM_Instance.GainPoint(score);
+        if (rcm != null && score > 0)
+        {
+            rcm.SpamPositiveMessages();
+        }
+        else
+        {
+            rcm.SpamNegativeMessages();
+        }
         //Choose new emote
         chooseNewContent();
     }
@@ -128,6 +137,6 @@ public class ContentManager : MonoBehaviour
 
     public void Bored()
     {
-
+        ChooseEmote(EmoteEnum.Bored);
     }
 }
