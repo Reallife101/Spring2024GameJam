@@ -3996,6 +3996,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: correctsfx.Path
+      value: event:/[SFX] Correct
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: incorrectsfx.Path
+      value: event:/[SFX] Incorrect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: correctsfx.Guid.Data1
+      value: 71877867
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: correctsfx.Guid.Data2
+      value: 1251898908
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: correctsfx.Guid.Data3
+      value: 1460245388
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: correctsfx.Guid.Data4
+      value: -1086257765
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: incorrectsfx.Guid.Data1
+      value: -859395283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: incorrectsfx.Guid.Data2
+      value: 1098239704
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: incorrectsfx.Guid.Data3
+      value: -1058694271
+      objectReference: {fileID: 0}
+    - target: {fileID: 5499531093931837733, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
+      propertyPath: incorrectsfx.Guid.Data4
+      value: -1232046230
+      objectReference: {fileID: 0}
     - target: {fileID: 5499531093931837735, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
       propertyPath: m_Name
       value: MainCanvas
