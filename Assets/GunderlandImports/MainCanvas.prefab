@@ -2080,7 +2080,7 @@ MonoBehaviour:
       Data3: 1911476913
       Data4: -746329874
     Path: event:/[UI] Derank
-  PV: {fileID: 0}
+  PV: {fileID: 543785717442440897}
 --- !u!114 &5499531093931837730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 8ef7d503e39673d428f7d4d2a3435256, type: 2}
+  sharedProfile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
 --- !u!1 &5499531093976202034
 GameObject:
   m_ObjectHideFlags: 0

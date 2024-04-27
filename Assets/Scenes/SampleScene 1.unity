@@ -3564,7 +3564,7 @@ PrefabInstance:
     - target: {fileID: 543785717442440897, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
       propertyPath: sharedProfile
       value: 
-      objectReference: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
+      objectReference: {fileID: 11400000, guid: f7d8757b5a417144b8adc561c4c9d9bb, type: 2}
     - target: {fileID: 5499531093151182174, guid: 2b8f40673973a8240bd9ecaed4cb1472, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
