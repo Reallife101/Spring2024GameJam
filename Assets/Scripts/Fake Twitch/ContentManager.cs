@@ -31,6 +31,26 @@ public class ContentManager : MonoBehaviour
         chooseNewContent();
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Happy();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Sad();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Bored();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Angry();
+        }
+    }
+
     public void PlayVideo(VideoClip clip)
     {
         contentImage.gameObject.SetActive(false);
