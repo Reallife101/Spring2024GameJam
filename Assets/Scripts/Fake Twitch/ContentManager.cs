@@ -63,4 +63,24 @@ public class ContentManager : MonoBehaviour
         //Choose new emote
         chooseNewContent();
     }
+
+    public void Happy()
+    {
+        ChooseEmote(EmoteEnum.Happy);
+    }
+
+    public void Sad()
+    {
+        ChooseEmote(EmoteEnum.Sad);
+    }
+
+    public void Angry()
+    {
+        ChooseEmote(EmoteEnum.Angry);
+    }
+
+    public void Bored()
+    {
+
+    }
 }
