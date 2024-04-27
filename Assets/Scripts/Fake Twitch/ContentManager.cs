@@ -8,8 +8,9 @@ public class ContentManager : MonoBehaviour
 {
     [SerializeField] Image contentImage;
     [SerializeField] VideoPlayer videoPlayer;
-
+    [SerializeField] private float emoteCooldown;
     [SerializeField] List<ContentSO> contentList = new List<ContentSO>();
+    float currentCooldown = 0;
 
     public static ContentManager Instance { get; private set; }
     ContentSO currentContent = null;
@@ -33,7 +34,13 @@ public class ContentManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        currentCooldown -= Time.deltaTime;
+        if(currentCooldown > emoteCooldown)
+        {
+            return;
+        }
+        currentCooldown = emoteCooldown;
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Happy();
         }

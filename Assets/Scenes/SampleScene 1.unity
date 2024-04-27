@@ -2612,6 +2612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contentImage: {fileID: 1958725347}
   videoPlayer: {fileID: 203337459}
+  emoteCooldown: 0.25
   contentList:
   - {fileID: 11400000, guid: 9298df57398b70449a57bd58f7ac489f, type: 2}
   - {fileID: 11400000, guid: 4d1925e2cfc313342b46e8b31bbb19e0, type: 2}
