@@ -30,6 +30,12 @@ public class message : MonoBehaviour
         CurrentMessage = msg;
     }
 
+    public void SetUsernameColor(Color c)
+    {
+        username.color = c;
+
+    }
+
     public void InitializeMessage()
     {
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, (textMeshProUGUI.fontSize+ LINE_BUFFER) * GetNumLines());
@@ -38,7 +44,7 @@ public class message : MonoBehaviour
         {
             textMeshProUGUI.text = currentMessage.senderName + ": "+ currentMessage.content;
             username.text = currentMessage.senderName + ": ";
-            //username.color = currentMessage.nameColor;
+            //username.color = GetRandomColor();
         }
         else
         {
