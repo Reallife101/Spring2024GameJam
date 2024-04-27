@@ -15,13 +15,13 @@ public enum EmoteEnum
 
 
 [Serializable]
-public class EmoteScoreDict : SerializableDictionary<EmoteEnum, float> {}
+public class EmoteScoreDict : SerializableDictionary<EmoteEnum, int> {}
 
 public abstract class ContentSO : ScriptableObject
 {
     public EmoteScoreDict emoteMap;
 
-    public float GetScore(EmoteEnum emote)
+    public int GetScore(EmoteEnum emote)
     {
         //If doesnt exist, do nothing
         if (!emoteMap.ContainsKey(emote))

@@ -15,7 +15,7 @@ MonoBehaviour:
   letterGradeSprite: {fileID: 0}
   letterGradeText: Dastardly
   comboMeterColor: {r: 1, g: 1, b: 1, a: 1}
-  pointsRequiredToNext: 625
+  pointsRequiredToNext: 10
   pointMultiplier: 1
   nextTier: {fileID: 11400000, guid: 776305086b3c47f4cb4fbdd4705bb80f, type: 2}
   prevTier: {fileID: 0}

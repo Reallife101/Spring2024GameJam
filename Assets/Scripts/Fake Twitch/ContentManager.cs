@@ -57,9 +57,8 @@ public class ContentManager : MonoBehaviour
     //Hook up this function to the emote buttons
     public void ChooseEmote(EmoteEnum emoteType)
     {
-        float score = currentContent.GetScore(emoteType);
-        //DO something with the score, prolly score manager somewhere
-
+        int score = currentContent.GetScore(emoteType);
+        pointManager.PM_Instance.GainPoint(score);
         //Choose new emote
         chooseNewContent();
     }

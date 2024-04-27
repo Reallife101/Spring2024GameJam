@@ -2071,7 +2071,7 @@ MonoBehaviour:
   tierText: {fileID: 5499531093212451881}
   multiplierText: {fileID: 5499531094245262535}
   comboMeterBackground: {fileID: 5499531093151182175}
-  comboDecayPercentagePerSecond: 0.01
+  comboDecayPercentagePerSecond: 0.05
   transitionDuration: 0.5
   derankSound:
     Guid:
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
+  sharedProfile: {fileID: 11400000, guid: f7d8757b5a417144b8adc561c4c9d9bb, type: 2}
 --- !u!1 &5499531093976202034
 GameObject:
   m_ObjectHideFlags: 0
