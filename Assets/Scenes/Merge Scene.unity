@@ -1303,6 +1303,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1210684895}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Bored
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1408,6 +1416,14 @@ PrefabInstance:
     - target: {fileID: 5769232832246319819, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1210684895}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Angry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4433,6 +4449,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1210684895}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Sad
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5497,6 +5521,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1210684895}
+    - target: {fileID: 6967469255250021430, guid: df79bc3488c680f48bc917a8ab754a13, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Happy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5860,6 +5892,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 25f7009b53f015d4a99f0c44d8e23638, type: 2}
   - {fileID: 11400000, guid: 5f87a94b36794554eb7c0f202bee8f18, type: 2}
   - {fileID: 11400000, guid: 75522fb06e3fb124d91feac69ccfbcc3, type: 2}
+  donationsfx:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  hasDono: 0
 --- !u!95 &1977433620
 Animator:
   serializedVersion: 5
