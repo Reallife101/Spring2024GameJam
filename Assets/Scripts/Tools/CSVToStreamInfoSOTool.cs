@@ -3,23 +3,23 @@ using UnityEditor;
 using System.Collections.Generic;
 
 #if UNITY_EDITOR
-public class CSVtoMessageSOTool : EditorWindow
+public class CSVToStreamInfoSOTool : EditorWindow
 {
-    [MenuItem("Tools/CSV to ScriptableObject Converter")]
+    [MenuItem("Tools/CSV to StreamInfoSO Converter")]
     public static void ShowWindow()
     {
-        GetWindow(typeof(CSVtoMessageSOTool), false, "CSV to ScriptableObject Converter");
+        GetWindow(typeof(CSVToStreamInfoSOTool), false, "CSV to StreamInfoSO Converter");
     }
 
     private TextAsset csvFile;
-    private List<MessageSO> messageDataList = new List<MessageSO>();
+    private List<TwitchInfoSO> messageDataList = new List<TwitchInfoSO>();
 
     private void OnGUI()
     {
         GUILayout.Label("Select a .csv file:", EditorStyles.boldLabel);
         csvFile = EditorGUILayout.ObjectField(csvFile, typeof(TextAsset), false) as TextAsset;
 
-        if (GUILayout.Button("Convert"))
+        if (GUILayout.Button("Convert to StreamInfo"))
         {
             ConvertCSVToScriptableObjects();
         }
@@ -39,16 +39,18 @@ public class CSVtoMessageSOTool : EditorWindow
         {
             string[] fields = lines[i].Split(',');
 
-            if (fields.Length >= 2)
+            if (fields.Length >= 3)
             {
                 string username = fields[0];
-                string content = fields[1];
+                string streamInfo = fields[1];
+                string category = fields[2];
 
-                MessageSO messageData = ScriptableObject.CreateInstance<MessageSO>();
-                messageData.senderName = username;
-                messageData.content = content;
+                TwitchInfoSO messageData = ScriptableObject.CreateInstance<TwitchInfoSO>();
+                messageData.streamerName = username;
+                messageData.streamInfo = streamInfo;
+                messageData.category = category;
 
-                string assetPath = "Assets/Messages/" + username + "_" + i + ".asset";
+                string assetPath = "Assets/StreamInfo/" + "StreamContent_"+ i + ".asset";
                 AssetDatabase.CreateAsset(messageData, assetPath);
 
                 messageDataList.Add(messageData);
@@ -61,5 +63,4 @@ public class CSVtoMessageSOTool : EditorWindow
         Debug.Log("CSV file converted to ScriptableObjects successfully!");
     }
 }
-
 #endif
