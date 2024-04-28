@@ -21,6 +21,7 @@ public class StreamEnd : MonoBehaviour
         if(timeUntilStreamEnd < 0)
         {
             animator.SetTrigger("End");
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("win", 1);
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("End"))
         {
