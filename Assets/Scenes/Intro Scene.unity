@@ -321,6 +321,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1757706779}
+        m_TargetAssemblyTypeName: ReactAudio, Assembly-CSharp
+        m_MethodName: playSadSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &28879392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,7 +1020,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 203337463}
   m_DirectAudioVolumes:
-  - 0.431
+  - 0.35
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -1079,7 +1091,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5048,6 +5060,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1757706779}
+        m_TargetAssemblyTypeName: ReactAudio, Assembly-CSharp
+        m_MethodName: playBoredSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &993665609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7300,6 +7324,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1757706779}
+        m_TargetAssemblyTypeName: ReactAudio, Assembly-CSharp
+        m_MethodName: playHappySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1302180380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7779,6 +7815,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1757706779}
+        m_TargetAssemblyTypeName: ReactAudio, Assembly-CSharp
+        m_MethodName: playSadSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1351988146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7904,6 +7952,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1210684898}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: ShowCredits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1757706779}
+        m_TargetAssemblyTypeName: ReactAudio, Assembly-CSharp
+        m_MethodName: playHappySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9790,6 +9850,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1757706779}
+        m_TargetAssemblyTypeName: ReactAudio, Assembly-CSharp
+        m_MethodName: playSadSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1754073677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9828,6 +9900,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754073674}
   m_CullTransparentMesh: 1
+--- !u!1 &1757706778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1757706780}
+  - component: {fileID: 1757706779}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1757706779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757706778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a46823642d7bfe4c9d20466a8066103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Happy:
+    Guid:
+      Data1: -1478842081
+      Data2: 1256398562
+      Data3: 1395001729
+      Data4: -2049474062
+    Path: event:/[SFX] Confirm
+  Sad:
+    Guid:
+      Data1: 1061853966
+      Data2: 1191246134
+      Data3: -2016631658
+      Data4: 393603548
+    Path: event:/[SFX] Cancel
+  Bored:
+    Guid:
+      Data1: 673727194
+      Data2: 1308346920
+      Data3: 1336471231
+      Data4: 1790418448
+    Path: event:/[SFX] Game Start
+  Angry:
+    Guid:
+      Data1: 353107462
+      Data2: 1338110667
+      Data3: 1263964557
+      Data4: 1308765796
+    Path: event:/[TEST] test_event
+--- !u!4 &1757706780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757706778}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1021.34454, y: 1177.873, z: -3.679117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1776250900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12336,3 +12480,4 @@ SceneRoots:
   - {fileID: 6372394765243689289}
   - {fileID: 1210684894}
   - {fileID: 1015012081}
+  - {fileID: 1757706780}
