@@ -8,6 +8,7 @@ public class Donation : MonoBehaviour
     [SerializeField] TMP_Text donorName;
     [SerializeField] TMP_Text donorDescription;
     [SerializeField] Animator animator;
+    [SerializeField] Animator donoAnimAnimator;
     [SerializeField] private float donationInterval;
     [SerializeField][Range(0, 1)] private float donationChance;
     [SerializeField] private float donationDuration;
@@ -62,5 +63,10 @@ public class Donation : MonoBehaviour
         yield return new WaitForSeconds(donationDuration);
         animator.SetBool("DisplayDono", false);
         donationCooldown = donationInterval;
+    }
+
+    public void StartVtuberDonoAnim()
+    {
+        donoAnimAnimator.SetTrigger("Play");
     }
 }
