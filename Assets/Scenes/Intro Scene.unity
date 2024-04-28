@@ -5742,7 +5742,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cc0b1e2fbf9afcb46841f4e9a0d4e55b, type: 2}
   - {fileID: 11400000, guid: fab07eedf81b34b4db36d2653bd4811c, type: 2}
   - {fileID: 11400000, guid: 07e8ff2847cd5d144b160f590670e599, type: 2}
-  username: {fileID: 1910775820}
+  username:
+  - {fileID: 0}
   streamInfo: {fileID: 2135543934}
   category: {fileID: 2031649411}
 --- !u!1 &1063821694
@@ -8247,7 +8248,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Content Streamer Overkill
+  m_text: Cowboy Streamer Overkill
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9958682b26874d548a4e3d1ab253bc63, type: 2}
   m_sharedMaterial: {fileID: -4650889686403104200, guid: 9958682b26874d548a4e3d1ab253bc63, type: 2}
@@ -10233,7 +10234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Content Streamer Overkill
+  m_text: Cowboy Streamer Overkill
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9958682b26874d548a4e3d1ab253bc63, type: 2}
   m_sharedMaterial: {fileID: -4650889686403104200, guid: 9958682b26874d548a4e3d1ab253bc63, type: 2}
@@ -11301,6 +11302,7 @@ MonoBehaviour:
   donorName: {fileID: 1105390333}
   donorDescription: {fileID: 1741853380}
   animator: {fileID: 1977433620}
+  donoAnimAnimator: {fileID: 0}
   donationInterval: 5
   donationChance: 0.25
   donationDuration: 2
