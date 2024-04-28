@@ -7,7 +7,7 @@ public class StreamInfoManager : MonoBehaviour
     [SerializeField]
     private List<TwitchInfoSO> twitchInfos;
     [SerializeField]
-    private TMP_Text username;
+    private List<TMP_Text> username;
     [SerializeField]
     private TMP_Text streamInfo;
     [SerializeField]
@@ -16,7 +16,10 @@ public class StreamInfoManager : MonoBehaviour
     void Start()
     {
         TwitchInfoSO tiso = twitchInfos[Random.Range(0, twitchInfos.Count)];
-        username.text = tiso.streamerName;
+        foreach (TMP_Text t in username)
+        {
+            t.text = tiso.streamerName;
+        }
         streamInfo.text = tiso.streamInfo;
         category.text = tiso.category;
 
