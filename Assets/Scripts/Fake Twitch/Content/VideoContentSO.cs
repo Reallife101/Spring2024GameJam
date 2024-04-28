@@ -10,6 +10,16 @@ public class VideoContentSO : ContentSO
 
     public override void GetContent()
     {
-        ContentManager.Instance.PlayVideo(clip);
+        ContentManager cm = ContentManager.Instance;
+        if (cm)
+        {
+            cm.PlayVideo(clip);
+
+        }
+        else
+        {
+            ContentIntroManager.Instance.PlayVideo(clip);
+
+        }
     }
 }

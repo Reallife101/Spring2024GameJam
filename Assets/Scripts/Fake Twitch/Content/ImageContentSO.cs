@@ -10,7 +10,17 @@ public class ImageContentSO : ContentSO
 
     public override void GetContent()
     {
-        ContentManager.Instance.DisplayImage(image);
+        ContentManager cm = ContentManager.Instance;
+        if (cm)
+        {
+            cm.DisplayImage(image);
+
+        }
+        else
+        {
+            ContentIntroManager.Instance.DisplayImage(image);
+
+        }
     }
 
 }
