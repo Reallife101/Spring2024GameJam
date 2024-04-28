@@ -46,6 +46,16 @@ public class pointManager : MonoBehaviour
         
         int pointsGained = (int)(points * comboManager.CM_Instance.currentMultiplier);
         totalPoints += pointsGained;
+
+        if (totalPoints <= 0)
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("crickets", 1);
+        } else
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("crickets", 0);
+        }
+
+
         comboManager.CM_Instance.GainComboPoints(pointsGained);
         score.text = totalPoints.ToString();
     }
