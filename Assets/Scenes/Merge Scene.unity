@@ -6182,8 +6182,8 @@ MonoBehaviour:
   donorName: {fileID: 1007029677}
   donorDescription: {fileID: 1627455455}
   animator: {fileID: 1977433620}
-  donationInterval: 3
-  donationChance: 0.5
+  donationInterval: 5
+  donationChance: 0.2
   donationDuration: 3
   messageSOs:
   - {fileID: 11400000, guid: 058152465e3273b41b47fe1db7a908d0, type: 2}

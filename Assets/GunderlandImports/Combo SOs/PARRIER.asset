@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PARRIER
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: PARRIER
+  letterGradeText: STREAMING OVERDOSE
   comboMeterColor: {r: 1, g: 0.7921569, b: 0.3764706, a: 1}
-  pointsRequiredToNext: 200
+  pointsRequiredToNext: 60
   pointMultiplier: 2.5
   nextTier: {fileID: 0}
   prevTier: {fileID: 11400000, guid: 1515e25f485147e49bf6fe263da55cc4, type: 2}

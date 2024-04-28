@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: A
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: Adderall
+  letterGradeText: Awesome!
   comboMeterColor: {r: 1, g: 0.5145066, b: 0, a: 1}
-  pointsRequiredToNext: 70
+  pointsRequiredToNext: 30
   pointMultiplier: 1.75
   nextTier: {fileID: 11400000, guid: 1515e25f485147e49bf6fe263da55cc4, type: 2}
   prevTier: {fileID: 11400000, guid: 797011d2a728fac4ab37251b0b130d94, type: 2}

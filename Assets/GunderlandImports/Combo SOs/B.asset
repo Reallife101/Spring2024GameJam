@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: B
   m_EditorClassIdentifier: 
   letterGradeSprite: {fileID: 0}
-  letterGradeText: Brutal
+  letterGradeText: Banger!
   comboMeterColor: {r: 0.7126256, g: 0.3100747, b: 0.735849, a: 1}
-  pointsRequiredToNext: 40
+  pointsRequiredToNext: 17
   pointMultiplier: 1.5
   nextTier: {fileID: 11400000, guid: 4e5385eed44c4a94386a5f559038eb46, type: 2}
   prevTier: {fileID: 11400000, guid: 776305086b3c47f4cb4fbdd4705bb80f, type: 2}
