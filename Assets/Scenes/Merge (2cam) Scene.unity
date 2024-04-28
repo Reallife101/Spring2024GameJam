@@ -1481,7 +1481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SCORE
+  m_text: TIME LEFT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5d3f4475758b6645bb899ca5434984d, type: 2}
   m_sharedMaterial: {fileID: 8250949865025955176, guid: f5d3f4475758b6645bb899ca5434984d, type: 2}
@@ -5547,10 +5547,6 @@ PrefabInstance:
     - target: {fileID: 1564016906019940810, guid: 5a94cfba87eca9e42934742ccc0f67e8, type: 3}
       propertyPath: m_Name
       value: StreamStart
-      objectReference: {fileID: 0}
-    - target: {fileID: 1564016906019940810, guid: 5a94cfba87eca9e42934742ccc0f67e8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
