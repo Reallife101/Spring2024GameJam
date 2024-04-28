@@ -25,15 +25,15 @@ MonoBehaviour:
   vignetteIntensity: 0.35
   comboSound:
     Guid:
-      Data1: -402193463
-      Data2: 1199681726
-      Data3: 465384588
-      Data4: 1263801412
-    Path: event:/[UI] G
+      Data1: 1512220674
+      Data2: 1276914648
+      Data3: 471177866
+      Data4: -1946411168
+    Path: event:/B
   dastardlyComboSound:
     Guid:
-      Data1: -503366399
-      Data2: 1304697019
-      Data3: -166692477
-      Data4: -470205793
-    Path: event:/[UI] E
+      Data1: 1512220674
+      Data2: 1276914648
+      Data3: 471177866
+      Data4: -1946411168
+    Path: event:/B

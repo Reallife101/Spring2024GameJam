@@ -168,7 +168,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2832072708721655712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,11 +210,11 @@ MonoBehaviour:
   transitionDuration: 0.5
   derankSound:
     Guid:
-      Data1: 834108247
-      Data2: 1271631064
-      Data3: 1911476913
-      Data4: -746329874
-    Path: event:/[UI] Derank
+      Data1: 1254872543
+      Data2: 1283127283
+      Data3: -1033192315
+      Data4: 211887887
+    Path: event:/DeRank
   PV: {fileID: 1291934398573444328}
 --- !u!114 &1399462867726031458
 MonoBehaviour:
@@ -2067,11 +2067,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -503366399
-      Data2: 1304697019
-      Data3: -166692477
-      Data4: -470205793
-    Path: event:/[UI] E
+      Data1: -1195796703
+      Data2: 1165634901
+      Data3: 1196318626
+      Data4: -65944215
+    Path: event:/G
   Event: 
   PlayEvent: 11
   StopEvent: 0

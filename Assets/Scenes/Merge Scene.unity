@@ -7056,6 +7056,26 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1015012080}
+    - target: {fileID: 2174835742830074234, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: derankSound.Path
+      value: event:/DeRank
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174835742830074234, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: derankSound.Guid.Data1
+      value: 1254872543
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174835742830074234, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: derankSound.Guid.Data2
+      value: 1283127283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174835742830074234, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: derankSound.Guid.Data3
+      value: -1033192315
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174835742830074234, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: derankSound.Guid.Data4
+      value: 211887887
+      objectReference: {fileID: 0}
     - target: {fileID: 3017492750693759908, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
       propertyPath: correctsfx.Path
       value: event:/[SFX] Correct
@@ -7099,6 +7119,30 @@ PrefabInstance:
     - target: {fileID: 3724768647209170684, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935315184019575961, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935315184019575961, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/G
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935315184019575961, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1195796703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935315184019575961, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1165634901
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935315184019575961, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1196318626
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935315184019575961, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -65944215
       objectReference: {fileID: 0}
     - target: {fileID: 6418209209884333979, guid: 258504651bba5c446bdb212a91980ef3, type: 3}
       propertyPath: m_fontAsset
