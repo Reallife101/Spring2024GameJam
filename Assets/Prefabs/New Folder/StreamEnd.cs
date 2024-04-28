@@ -28,4 +28,14 @@ public class StreamEnd : MonoBehaviour
             Time.timeScale = 0;
         }
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(mainMenuName);
+    }
 }
