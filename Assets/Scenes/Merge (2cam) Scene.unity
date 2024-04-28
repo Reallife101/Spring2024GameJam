@@ -12199,6 +12199,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f6a2920764908842955852f2b4f24be, type: 2}
   - {fileID: 11400000, guid: 704977105a656514db1295659dbbb56a, type: 2}
   rcm: {fileID: 1210684896}
+  streamerAnim: {fileID: 1998185811}
 --- !u!114 &1210684896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20761,6 +20762,11 @@ PrefabInstance:
 --- !u!4 &1998185810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4460123713120253621, guid: e2ca0f097ef040f42aa157cfdf9865df, type: 3}
+  m_PrefabInstance: {fileID: 1998185809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1998185811 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6024856208200048731, guid: e2ca0f097ef040f42aa157cfdf9865df, type: 3}
   m_PrefabInstance: {fileID: 1998185809}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1999789741
