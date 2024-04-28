@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emoteMap:
     m_keys: 00000000010000000200000003000000
-    m_values: 03000000000000000100000000000000
+    m_values: 02000000ffffffff00000000ffffffff
   clip: {fileID: 32900000, guid: 85e82ba20e7133b43ac239d5f1b98055, type: 3}
