@@ -13,6 +13,7 @@ public class ContentManager : MonoBehaviour
     [SerializeField] Donation donationScript;
     [SerializeField] List<ContentSO> contentList = new List<ContentSO>();
     [SerializeField] ReactiveChatManager rcm;
+    [SerializeField] Animator streamerAnim;
     float currentCooldown = 0;
 
     public static ContentManager Instance { get; private set; }
@@ -37,17 +38,6 @@ public class ContentManager : MonoBehaviour
 
     private void Update()
     {
-        if (donationScript.donoActive)
-        {
-            currentCooldown = emoteCooldown;
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                Happy();
-            }
-            return;
-        }
-
-
         currentCooldown -= Time.deltaTime;
         if(currentCooldown > emoteCooldown)
         {
@@ -122,21 +112,46 @@ public class ContentManager : MonoBehaviour
         {
             ChooseEmote(EmoteEnum.Happy);
         }
+        streamerAnim.SetTrigger("Happy");
         
     }
 
     public void Sad()
     {
-        ChooseEmote(EmoteEnum.Sad);
+        if (donationScript.donoActive)
+        {
+
+        }
+        else
+        {
+            ChooseEmote(EmoteEnum.Sad);
+        }
+        streamerAnim.SetTrigger("Sad");
     }
 
     public void Angry()
     {
-        ChooseEmote(EmoteEnum.Angry);
+        if (donationScript.donoActive)
+        {
+
+        }
+        else
+        {
+            ChooseEmote(EmoteEnum.Angry);
+        }
+        streamerAnim.SetTrigger("Angry");
     }
 
     public void Bored()
     {
-        ChooseEmote(EmoteEnum.Bored);
+        if (donationScript.donoActive)
+        {
+
+        }
+        else
+        {
+            ChooseEmote(EmoteEnum.Bored);
+        }
+        streamerAnim.SetTrigger("Bored");
     }
 }
