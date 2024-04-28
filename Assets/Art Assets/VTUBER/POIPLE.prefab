@@ -5499,7 +5499,7 @@ GameObject:
   - component: {fileID: 6024856208200048731}
   - component: {fileID: 6037097075480287158}
   - component: {fileID: 6165594868072703436}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: POIPLE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
