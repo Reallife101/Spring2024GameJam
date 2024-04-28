@@ -10,10 +10,19 @@
 		"Motions": {
 			"": [
 				{
-					"File": "motionss/IDLE.motion3.json"
+					"File": "ANGRY.motion3.json"
 				},
 				{
-					"File": "motionss/POG.motion3.json"
+					"File": "BORED.motion3.json"
+				},
+				{
+					"File": "IDLE.motion3.json"
+				},
+				{
+					"File": "POG.motion3.json"
+				},
+				{
+					"File": "SAD.motion3.json"
 				}
 			]
 		}

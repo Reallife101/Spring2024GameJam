@@ -21,7 +21,7 @@ public class ContentManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
@@ -39,7 +39,7 @@ public class ContentManager : MonoBehaviour
     private void Update()
     {
         currentCooldown -= Time.deltaTime;
-        if(currentCooldown > emoteCooldown)
+        if (currentCooldown > emoteCooldown)
         {
             return;
         }
@@ -104,7 +104,7 @@ public class ContentManager : MonoBehaviour
 
     public void Happy()
     {
-        if(donationScript.donoActive)
+        if (donationScript.donoActive)
         {
             pointManager.PM_Instance.GainPoint(1);
         }
@@ -113,7 +113,7 @@ public class ContentManager : MonoBehaviour
             ChooseEmote(EmoteEnum.Happy);
         }
         streamerAnim.SetTrigger("Happy");
-        
+
     }
 
     public void Sad()
