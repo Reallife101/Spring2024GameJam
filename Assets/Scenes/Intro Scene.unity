@@ -11168,11 +11168,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 75522fb06e3fb124d91feac69ccfbcc3, type: 2}
   donationsfx:
     Guid:
-      Data1: 173518152
-      Data2: 1189595596
-      Data3: -996675662
-      Data4: -2123637647
-    Path: event:/[SFX] Donation Alert
+      Data1: -1864499211
+      Data2: 1235595365
+      Data3: -40912730
+      Data4: 86919273
+    Path: event:/[SFX] Donation Alert Title
   hasDono: 0
 --- !u!95 &1977433620
 Animator:
