@@ -11,9 +11,11 @@ public class StreamEnd : MonoBehaviour
     [SerializeField] private TMP_Text timeLeftText;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private string mainMenuName;
+    [SerializeField] FMODUnity.EventReference winsfx;
+    private bool winhasplayed;
     void Start()
     {
-        
+        winhasplayed = false;
     }
 
     // Update is called once per frame
@@ -26,6 +28,11 @@ public class StreamEnd : MonoBehaviour
             scoreText.text = "Final Viewer Count: " + pointManager.PM_Instance.totalPoints.ToString();
             animator.SetTrigger("End");
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("win", 1);
+            if (!winhasplayed)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(winsfx);
+                winhasplayed = true;
+            }
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("End"))
         {

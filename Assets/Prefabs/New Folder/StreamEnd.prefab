@@ -195,6 +195,13 @@ MonoBehaviour:
   timeLeftText: {fileID: 0}
   scoreText: {fileID: 7072344263513106979}
   mainMenuName: Intro Scene
+  winsfx:
+    Guid:
+      Data1: 51210268
+      Data2: 1237767239
+      Data3: -1613428337
+      Data4: 1487851164
+    Path: event:/[Music] Victory
 --- !u!1 &1837685010344397495
 GameObject:
   m_ObjectHideFlags: 0
