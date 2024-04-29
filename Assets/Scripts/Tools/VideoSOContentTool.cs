@@ -94,10 +94,10 @@ public class VideoSOContentTool : EditorWindow
 
             //Order is  Happy, Sad, Bored, Angry
             card.emoteMap = new EmoteScoreDict();
-            card.emoteMap[EmoteEnum.Happy] = int.Parse(lines[0])-1;
-            card.emoteMap[EmoteEnum.Sad] = int.Parse(lines[1])-1;
-            card.emoteMap[EmoteEnum.Bored] = int.Parse(lines[2])-1;
-            card.emoteMap[EmoteEnum.Angry] = int.Parse(lines[3])-1;
+            card.emoteMap[EmoteEnum.Happy] = int.Parse(lines[0])<1 ? -3 : int.Parse(lines[0]);
+            card.emoteMap[EmoteEnum.Sad] = int.Parse(lines[1]) < 1 ? -3 : int.Parse(lines[1]);
+            card.emoteMap[EmoteEnum.Bored] = int.Parse(lines[2]) < 1 ? -3 : int.Parse(lines[2]);
+            card.emoteMap[EmoteEnum.Angry] = int.Parse(lines[3]) < 1 ? -3 : int.Parse(lines[3]);
 
             // Save the CardSO as an asset
             string path = "Assets/Current Content SOs/" + _filename + "ImageSO.asset";
